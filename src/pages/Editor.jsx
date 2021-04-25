@@ -1,19 +1,14 @@
-import React from 'react';
-import ContainerNoFooter from '../containers/containerNoFooter';
+import React, { useState } from "react";
+import EditorJs from 'react-editor-js';
+import ContainerNoFooter from "../containers/containerNoFooter";
+import { EDITOR_JS_TOOLS } from '../constants/TextEditor';
+const TextEditor = (props) => {
 
-const Editor = (props) => {
-    return(
-        <ContainerNoFooter>
-            <div className="p-16">
-                <h1 contentEditable="true" className="focus:outline-none text-4xl border-b-2 pb-2 mb-8">
-                    Title
-                </h1>
-                <div contentEditable="true" className=" w-full h-screen focus:outline-none text-2xl">
+  return (
+    <ContainerNoFooter>
+      <EditorJs tools={EDITOR_JS_TOOLS} placeholder="Start typing" inlineToolbar="true" />
+    </ContainerNoFooter>
+  );
+};
 
-                </div>
-            </div>
-        </ContainerNoFooter>
-    );
-}
-
-export default Editor;
+export default TextEditor;

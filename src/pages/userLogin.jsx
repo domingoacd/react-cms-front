@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Redirect, useHistory } from 'react-router-dom';
 import { login } from "../store/actions";
+import ROUTES from '../constants/routes';
 import imageLogin from "../assets/login-bw.png";
 import imageRegister from "../assets/blogging-bw.png";
+
+
 const UserLogin = (props) => {
   const [showRegister, setShowRegister] = useState(false);
   const userIsLogged = useSelector(state => state.is_logged);
@@ -20,8 +23,8 @@ const UserLogin = (props) => {
   };
 
   return (
-    userIsLogged ? <Redirect to={'/editor'}/>  :
-    <div className="w-screen min-h-screen flex justify-center items-center bg-gray-400">
+    userIsLogged ? <Redirect to={ROUTES.DASHBOARD}/>  :
+    <div className="w-screen min-h-screen flex justify-center items-center bg-gray-400 ">
       <div
         className={`container mx-auto rounded overflow-hidden ${
           showRegister ? "hidden" : "flex"
