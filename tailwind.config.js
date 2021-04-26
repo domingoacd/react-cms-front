@@ -4,6 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'base-text': '#626264',
+        'text-dark': '#182135',
+        'text-light': '#878787',
         'primary' : '#503E9D',
         'primary-light': '#AFA2EB',
         'primary-dark': '#40327D',
@@ -13,9 +16,6 @@ module.exports = {
         'white-tone': '#F7F7F7',
         'main-bg': '#F2F2F2',
         'sidebar-bg': '#F8F8F8',
-        'base-text': '#626264',
-        'text-dark': '#182135',
-        'text-light': '#878787',
         'icon-color': '#000000'
       },
 
