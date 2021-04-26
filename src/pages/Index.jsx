@@ -1,14 +1,14 @@
 import React from 'react'; 
-import MainContainer from '../containers/mainContainer';
-import Sidebar from '../components/Sidebar';
+import Layout from '../layouts/mainLayout';
+import SearchBar from '../components/Searchbar';
 
 const Dashboard = () => {
     return (
-        <MainContainer>
-            <div className="w-full flex-1">
-                
+        <Layout>
+            <div className="flex-1 w-full">
+                <SearchBar />
             </div>
-        </MainContainer>
+        </Layout>
     );
 }
 

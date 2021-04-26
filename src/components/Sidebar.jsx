@@ -7,6 +7,7 @@ import bookmarkIcon from '../assets/bookmark.png';
 import subscriptionIcon from '../assets/document.png';
 import messagesIcon from '../assets/messages.png';
 import settingsIcon from '../assets/settings.png';
+import logoutIcon from '../assets/logout.png';
 import homeIconActive from '../assets/homeColor.png';
 import exploreIconActive from '../assets/feedColor.png';
 import bookmarkIconActive from '../assets/bookmarkColor.png';
@@ -25,6 +26,7 @@ const Sidebar =  (props) => {
         <SideButton text="Subscriptions" icon={subscriptionIcon} activeIcon={subscriptionIconActive} route="/a"/>
         <SideButton text="Messages" icon={messagesIcon} activeIcon={messagesIconActive} route="/a"/>
         <SideButton text="Settings" icon={settingsIcon} activeIcon={settingsIconActive} route="/a"/>
+        <SideButton text="Logout" icon={logoutIcon} route="/a" className="mt-8"/>
     </nav>
     );
 }

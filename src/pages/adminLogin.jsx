@@ -1,6 +1,5 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import {  } from "react-router-dom";
 import { is_admin } from "../store/actions";
 import image from "../assets/security-bw.png";
 const AdminLogin = (props) => {

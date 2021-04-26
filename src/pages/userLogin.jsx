@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Redirect, useHistory } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import { login } from "../store/actions";
 import ROUTES from '../constants/routes';
 import imageLogin from "../assets/login-bw.png";
@@ -11,7 +11,6 @@ const UserLogin = (props) => {
   const [showRegister, setShowRegister] = useState(false);
   const userIsLogged = useSelector(state => state.is_logged);
   const dispatch = useDispatch();
-  let history = useHistory();
 
   const handleCreateAccountClick = (e) => {
     setShowRegister((prevShowRegister) => !prevShowRegister);

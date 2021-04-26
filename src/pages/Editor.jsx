@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React  from "react";
 import EditorJs from 'react-editor-js';
 import ContainerNoFooter from "../containers/containerNoFooter";
 import { EDITOR_JS_TOOLS } from '../constants/TextEditor';
