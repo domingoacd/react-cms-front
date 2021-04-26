@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.cdx-block {
-    font-size: 1.5rem;
+@layer base {
+    body {
+        @apply bg-main-bg;
+    }
 }

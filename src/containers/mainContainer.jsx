@@ -1,13 +1,17 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
 
 const MainContainer = ({ children }) => {
     return (
-        <div className="w-screen min-h-screen bg-gray-800 flex flex-col justify-between">
-            <Navbar />
+        <div className="w-screen min-h-screen flex">
+            <Sidebar />
+            <div className="flex-1 flex flex-col">
+                <div className="flex-1 flex">
                 {children}
-            <Footer />
+                </div>
+                <Footer />
+            </div>
         </div>
     );
 }

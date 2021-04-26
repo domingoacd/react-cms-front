@@ -13,7 +13,7 @@ module.exports = {
         'white-tone': '#F7F7F7',
         'main-bg': '#F2F2F2',
         'sidebar-bg': '#F8F8F8',
-        'text': '#626264',
+        'base-text': '#626264',
         'text-dark': '#182135',
         'text-light': '#878787',
         'icon-color': '#000000'
