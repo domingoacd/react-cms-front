@@ -1,0 +1,40 @@
+{
+    "channels": [
+        {
+            "id": "1",
+            "name": "fox news",
+            "image": "/images/newslogo1.png",
+            "url": "/"
+        },
+        {
+            "id": "2",
+            "name": "cw6 news",
+            "image": "/images/newslogo2.png",
+            "url": "/"
+        },
+        {
+            "id": "3",
+            "name": "abc news",
+            "image": "/images/newslogo3.png",
+            "url": "/"
+        },
+        {
+            "id": "4",
+            "name": "al jazeera",
+            "image": "/images/newslogo4.png",
+            "url": "/"
+        },
+        {
+            "id": "5",
+            "name": "bbc news",
+            "image": "/images/newslogo5.png",
+            "url": "/"
+        },
+        {
+            "id": "6",
+            "name": "cnn news",
+            "image": "/images/newslogo6.png",
+            "url": "/"
+        }
+    ]
+}

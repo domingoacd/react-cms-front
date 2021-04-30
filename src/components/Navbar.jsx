@@ -1,9 +1,11 @@
 import React from 'react';
-
+import SearchBar from './Searchbar';
+import MenuButton from './buttons/MenuButton';
 const Navbar = (props) => {
     return (
-        <nav className=" w-screen bg-gray-400 h-16">
-            
+        <nav className=" flex-1 flex flex-wrap items-center justify-between mb-8">
+            <SearchBar />
+            <MenuButton />
         </nav>
     );
 }

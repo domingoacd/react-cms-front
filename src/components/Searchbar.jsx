@@ -8,7 +8,7 @@ import searchIcon from '../assets/search.png';
 
 const Searchbar = (props) => {
     return (
-        <form className="flex flex-wrap ">
+        <form className="flex">
             <Select icon={locationIcon}/>
             <Select icon={pieIcon}/>
             <Select icon={calendarIcon}/>

@@ -9,4 +9,28 @@
     body {
         @apply bg-main-bg;
     }
+
+    h6 {
+        @apply text-sm;
+    }
+
+    h5 {
+        @apply text-lg
+    }
+
+    h4 {
+        @apply text-xl
+    }
+
+    h3 {
+        @apply text-2xl
+    }
+
+    h2 {
+        @apply text-3xl
+    }
+
+    h1 {
+        @apply text-4xl;
+    }
 }
