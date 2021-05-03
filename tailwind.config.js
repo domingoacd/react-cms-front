@@ -9,6 +9,7 @@ module.exports = {
         'text-light': '#878787',
         'primary' : '#503E9D',
         'primary-light': '#AFA2EB',
+        'primary-lighter': '#E1DFE9',
         'primary-dark': '#40327D',
         'secondary': '#FF1E1E',
         'secondary-light': '#EB6363',
@@ -22,6 +23,10 @@ module.exports = {
       fontFamily: {
         'normal': "'Karla', sans-serif",
         'title': "'Spectral', serif;"
+      },
+
+      minWidth: {
+        '19r': '19rem'
       }
     },
   },

@@ -1,0 +1,87 @@
+{
+    "headlines": [
+        {
+            "title": "test",
+            "image": "/images/newsImage.png",
+            "url": "/",
+            "network": "test net",
+            "time": "01:00",
+            "date": "0\/0\/0",
+            "interactions": {
+                "likes": "0",
+                "dislikes": "0"
+            }
+        },
+        {
+            "title": "test",
+            "image": "/images/newsImage.png",
+            "url": "/",
+            "network": "test net",
+            "time": "01:00",
+            "date": "0\/0\/0",
+            "interactions": {
+                "likes": "0",
+                "dislikes": "0"
+            }
+        },
+        {
+            "title": "test",
+            "image": "/images/newsImage.png",
+            "url": "/",
+            "network": "test net",
+            "time": "01:00",
+            "date": "0\/0\/0",
+            "interactions": {
+                "likes": "0",
+                "dislikes": "0"
+            }
+        },
+        {
+            "title": "test",
+            "image": "/images/newsImage.png",
+            "url": "/",
+            "network": "test net",
+            "time": "01:00",
+            "date": "0\/0\/0",
+            "interactions": {
+                "likes": "0",
+                "dislikes": "0"
+            }
+        },
+        {
+            "title": "test",
+            "image": "/images/newsImage.png",
+            "url": "/",
+            "network": "test net",
+            "time": "01:00",
+            "date": "0\/0\/0",
+            "interactions": {
+                "likes": "0",
+                "dislikes": "0"
+            }
+        },{
+            "title": "test",
+            "image": "/images/newsImage.png",
+            "url": "/",
+            "network": "test net",
+            "time": "01:00",
+            "date": "0\/0\/0",
+            "interactions": {
+                "likes": "0",
+                "dislikes": "0"
+            }
+        },
+        {
+            "title": "test 2",
+            "image": "/images/newsImage.png",
+            "url": "/",
+            "network": "test net 2",
+            "time": "01:00",
+            "date": "0\/0\/0",
+            "interactions": {
+                "likes": "0",
+                "dislikes": "0"
+            }
+        }
+    ]
+}

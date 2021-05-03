@@ -18,10 +18,10 @@ const CardBoxSmall = ({ title, moreUrl, data }) => {
             <div className="flex justify-center flex-wrap lg:justify-between">
                 {
                     data.map(element => (
-                        <Link to={element.url} className="m-2 w-40 flex flex-1" key={element.id}>
-                            <div className="w-full h-full rounded-xl shadow-lg flex flex-col items-center justify-center p-4 bg-white-tone">
-                                <img src={element.image} alt="" className="my-5 w-20 flex-1"/>
-                                <p className="font-bold uppercase text-text-dark justify-self-end">{element.name}</p>
+                        <Link to={element.url} className="m-2 w-40 flex" key={element.id}>
+                            <div className="w-full h-full rounded-xl shadow-lg flex flex-wrap items-center justify-center p-4 bg-white-tone">
+                                <img src={element.image} alt="" className="my-5 w-20"/>
+                                <p className="font-bold uppercase text-text-dark self-end">{element.name}</p>
                             </div>
                         </Link>        
                     ))
