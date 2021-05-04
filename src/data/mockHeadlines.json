@@ -1,7 +1,7 @@
 {
     "headlines": [
         {
-            "title": "test",
+            "title": "Consectetur ut consectetur ea adipisicing amet veniam velit officia minim.",
             "image": "/images/newsImage.png",
             "url": "/",
             "network": "test net",
@@ -13,8 +13,8 @@
             }
         },
         {
-            "title": "test",
-            "image": "/images/newsImage.png",
+            "title": "Deserunt cillum aliqua labore cupidatat in aliqua sint deserunt.",
+            "image": "/images/newsImage2.png",
             "url": "/",
             "network": "test net",
             "time": "01:00",
@@ -25,8 +25,8 @@
             }
         },
         {
-            "title": "test",
-            "image": "/images/newsImage.png",
+            "title": "Dolore irure minim ullamco nostrud exercitation labore nostrud labore eu ipsum.",
+            "image": "/images/newsImage3.png",
             "url": "/",
             "network": "test net",
             "time": "01:00",
@@ -37,8 +37,8 @@
             }
         },
         {
-            "title": "test",
-            "image": "/images/newsImage.png",
+            "title": "Quis non duis labore culpa reprehenderit deserunt est nisi cillum labore id irure aliquip.",
+            "image": "/images/newsImage4.png",
             "url": "/",
             "network": "test net",
             "time": "01:00",
@@ -49,8 +49,8 @@
             }
         },
         {
-            "title": "test",
-            "image": "/images/newsImage.png",
+            "title": "Voluptate sint commodo ullamco excepteur ea voluptate reprehenderit dolore.",
+            "image": "/images/newsImage5.png",
             "url": "/",
             "network": "test net",
             "time": "01:00",
@@ -60,22 +60,10 @@
                 "dislikes": "0"
             }
         },{
-            "title": "test",
-            "image": "/images/newsImage.png",
+            "title": "Consequat reprehenderit in cupidatat pariatur fugiat aliqua ipsum ea consequat.",
+            "image": "/images/newsImage6.png",
             "url": "/",
             "network": "test net",
-            "time": "01:00",
-            "date": "0\/0\/0",
-            "interactions": {
-                "likes": "0",
-                "dislikes": "0"
-            }
-        },
-        {
-            "title": "test 2",
-            "image": "/images/newsImage.png",
-            "url": "/",
-            "network": "test net 2",
             "time": "01:00",
             "date": "0\/0\/0",
             "interactions": {

@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 
 const MainLayout = ({ children }) => {
     return (
-        <div className="w-screen min-h-screen flex">
+        <div className="min-h-screen flex">
             <Sidebar />
             <div className="flex-1 flex flex-col">
                 <div className="flex-1 flex p-4">

@@ -12,8 +12,10 @@ const Dashboard = () => {
         <Layout>
             <div className="flex-1 w-full">
                 <Navbar />
-                <CardBoxSmall title="Explore Channels" moreUrl="/" data={mockChannels.channels}/>
-                <CardBoxRows title="Today's Headlines" moreUrl="/" data={mockHeadlines.headlines}/>
+                <div className="container">
+                    <CardBoxSmall title="Explore Channels" moreUrl="/" data={mockChannels.channels}/>
+                    <CardBoxRows title="Today's Headlines" moreUrl="/" data={mockHeadlines.headlines}/>
+                </div>
             </div>
         </Layout>
     );
