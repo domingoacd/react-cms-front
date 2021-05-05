@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
@@ -9,7 +11,7 @@ module.exports = {
         'text-light': '#878787',
         'primary' : '#503E9D',
         'primary-light': '#AFA2EB',
-        'primary-lighter': '#E1DFE9',
+        'primary-lighter': '#E1DFE9', 
         'primary-dark': '#40327D',
         'secondary': '#FF1E1E',
         'secondary-light': '#EB6363',
@@ -37,5 +39,15 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addUtilities }) {
+      const newUtilities = {
+        '.line-clamp-2': {
+          '-webkit-line-clamp': '2'
+        }
+      };
+      
+      addUtilities(newUtilities)
+    })
+  ],
 }
