@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 const CardBoxBig = ({ title, moreUrl, data }) => {
     return (
-        <section className="my-4">
+        <section className="my-8">
             { title ?
             <div className="flex justify-between mb-4 ">
                 <h4 className=" font-bold text-text-dark">{title}</h4>

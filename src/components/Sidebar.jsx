@@ -1,5 +1,6 @@
 import React from 'react';
 import SideButton from './buttons/SideButton';
+import ROUTES from '../constants/routes';
 import logo from '../assets/world.svg';
 import homeIcon from '../assets/home.png';
 import exploreIcon from '../assets/feed.png';
@@ -21,8 +22,8 @@ const Sidebar =  (props) => {
     <nav className=" flex flex-col items-center bg-sidebar-bg w-60 rounded-tr-3xl rounded-br-3xl py-6 px-3 ">
         <img src={logo} alt="" className=" w-12 mb-8" />
         <SideButton text="Home" icon={homeIcon} activeIcon={homeIconActive} route="/"/>
-        <SideButton text="Explore" icon={exploreIcon} activeIcon={exploreIconActive} route="/a"/>
-        <SideButton text="Saved" icon={bookmarkIcon} activeIcon={bookmarkIconActive} route="/a"/>
+        <SideButton text="Explore" icon={exploreIcon} activeIcon={exploreIconActive} route={ROUTES.EXPLORE}/>
+        <SideButton text="Saved" icon={bookmarkIcon} activeIcon={bookmarkIconActive} route={ROUTES.BOOKMARKS}/>
         <SideButton text="Subscriptions" icon={subscriptionIcon} activeIcon={subscriptionIconActive} route="/a"/>
         <SideButton text="Messages" icon={messagesIcon} activeIcon={messagesIconActive} route="/a"/>
         <SideButton text="Settings" icon={settingsIcon} activeIcon={settingsIconActive} route="/a"/>
