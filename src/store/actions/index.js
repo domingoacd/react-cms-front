@@ -2,6 +2,10 @@ export const LOGIN = 'LOGIN';
 export const LOGOUT = 'LOGOUT';
 export const IS_ADMIN = 'IS_ADMIN';
 
+/* MENU */
+export const SHOW_SIDEBAR = 'SHOW_SIDEBAR';
+export const HIDE_SIDEBAR = 'HIDE_SIDEBAR';
+
 export function login () {
     const action = {
         type: LOGIN
@@ -25,3 +29,5 @@ export function is_admin () {
 
     return action;
 }
+
+export * from './menu';
