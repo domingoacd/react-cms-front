@@ -1,6 +1,7 @@
 {
     "headlines": [
         {
+            "id": 1,
             "title": "Consectetur ut consectetur ea adipisicing amet veniam velit officia minim.",
             "image": "/images/newsImage.png",
             "url": "/",
@@ -13,6 +14,7 @@
             }
         },
         {
+            "id": 2,
             "title": "Deserunt cillum aliqua labore cupidatat in aliqua sint deserunt.",
             "image": "/images/newsImage2.png",
             "url": "/",
@@ -25,6 +27,7 @@
             }
         },
         {
+            "id": 3,
             "title": "Dolore irure minim ullamco nostrud exercitation labore nostrud labore eu ipsum.",
             "image": "/images/newsImage3.png",
             "url": "/",
@@ -37,6 +40,7 @@
             }
         },
         {
+            "id": 4,
             "title": "Quis non duis labore culpa reprehenderit deserunt est nisi cillum labore id irure aliquip.",
             "image": "/images/newsImage4.png",
             "url": "/",
@@ -49,6 +53,7 @@
             }
         },
         {
+            "id": 5,
             "title": "Voluptate sint commodo ullamco excepteur ea voluptate reprehenderit dolore.",
             "image": "/images/newsImage5.png",
             "url": "/",
@@ -60,6 +65,7 @@
                 "dislikes": "0"
             }
         },{
+            "id": 6,
             "title": "Consequat reprehenderit in cupidatat pariatur fugiat aliqua ipsum ea consequat.",
             "image": "/images/newsImage6.png",
             "url": "/",

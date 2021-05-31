@@ -1,6 +1,6 @@
 import { SHOW_SIDEBAR, HIDE_SIDEBAR } from '../actions';
 
-const initialState = true;
+const initialState = false;
 
 const  menu_reducer = (state = initialState, action) => {
     switch (action.type) {

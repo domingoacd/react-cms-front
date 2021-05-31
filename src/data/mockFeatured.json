@@ -1,6 +1,7 @@
 {
     "featured": [
         {
+            "id": 1,
             "title": "Mollit nisi laboris adipisicing aliquip nisi sit nostrud Lorem.",
             "image": "/images/newsImage7.png",
             "url": "/",
@@ -12,6 +13,7 @@
                 "dislikes": "0"
             }
         },{
+            "id": 2,
             "title": "Nulla in culpa laborum exercitation mollit Lorem ipsum dolor.",
             "image": "/images/newsImage8.png",
             "url": "/",
@@ -23,6 +25,7 @@
                 "dislikes": "0"
             }
         },{
+            "id": 3,
             "title": "Dolore commodo sunt cupidatat laborum fugiat adipisicing do.",
             "image": "/images/newsImage9.png",
             "url": "/",

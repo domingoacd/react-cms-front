@@ -1,9 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Layout from "../layouts/mainLayout";
-import CardBoxRows from "../components/cardBoxes/CardBoxRows";
 import CardBoxBig from "../components/cardBoxes/CardBoxBig";
-import mockHeadlines from "../data/mockHeadlines.json";
 import mockFeatured from "../data/mockFeatured.json";
 import bookmarkIcon from "../assets/bookmark.png";
 

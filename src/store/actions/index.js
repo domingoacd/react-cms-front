@@ -6,6 +6,10 @@ export const IS_ADMIN = 'IS_ADMIN';
 export const SHOW_SIDEBAR = 'SHOW_SIDEBAR';
 export const HIDE_SIDEBAR = 'HIDE_SIDEBAR';
 
+/* OVERLAY */
+export const SHOW_OVERLAY = 'SHOW_OVERLAY';
+export const HIDE_OVERLAY = 'HIDE_OVERLAY';
+
 export function login () {
     const action = {
         type: LOGIN
@@ -31,3 +35,4 @@ export function is_admin () {
 }
 
 export * from './menu';
+export * from './overlay';
