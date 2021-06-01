@@ -4,6 +4,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
 import Router from './router/router';
 import rootReducer from './store/reducers';
+import Loader from './components/Loader';
 
 let store = createStore(
     rootReducer,
@@ -16,6 +17,7 @@ let store = createStore(
 const App = () => {
     return (
         <Provider store={store}>
+            <Loader />
             <Router> 
 
             </Router>

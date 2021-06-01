@@ -1,49 +1,52 @@
-import React from "react";
-import { useDispatch } from "react-redux";
-import { is_admin } from "../store/actions";
-import image from "../assets/security-bw.png";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from 'react-redux';
+import { Redirect } from 'react-router-dom';
+import ROUTES from '../constants/routes';
+import InputText from "../components/formElements/InputText";
+import { authUser } from "../helpers";
+import image from "../assets/login-bw.png";
+
 const AdminLogin = (props) => {
+  const [userEmail, setUserEmail] = useState(null);
+  const [userPassword, setUserPassword] = useState(null);
+  const userIsLogged = useSelector(state => state.is_logged);
   const dispatch = useDispatch();
 
   const logAdmin = (e) => {
     e.preventDefault();
-    dispatch(is_admin());
+    dispatch(authUser(userEmail, userPassword));
   };
 
   return (
-    <div className="w-screen min-h-screen flex justify-center items-center bg-gray-400 ">
-      <div className="container mx-auto flex rounded overflow-hidden">
-        <div className="w-11/12 sm:rounded-none rounded sm:w-3/6 bg-gray-700 sm:bg-gray-300 pt-8 sm:pt-4 p-4 flex flex-col justify-center items-center relative mx-auto sm:mx-0">
+    userIsLogged ? <Redirect to={ROUTES.DASHBOARD}/>  :
+    <div className="w-screen min-h-screen flex justify-center items-center bg-main-bg">
+      <div className="container mx-auto flex rounded overflow-hidden shadow-md border border-primary-light">
+        <div className="w-11/12 sm:rounded-none rounded sm:w-3/6 bg-gray-700 sm:bg-white-tone pt-8 sm:pt-4 p-4 flex flex-col justify-center items-center relative mx-auto sm:mx-0">
           <form
             action=""
-            className="rounded bg-white p-4 shadow-md w-11/12 sm:w-9/12 relative mb-4"
+            className="p-4 w-11/12 sm:w-9/12 relative mb-4"
+            onSubmit={logAdmin}
           >
-            <h2 className="uppercase text-gray-400 font-bold mb-4">
+            <h2 className="uppercase text-gray-400 font-bold mb-4 text-center">
               Admin Zone
             </h2>
-
-            <label htmlFor="user_email" className="w-full flex flex-col">
-              Email
-              <input
-                type="email"
-                className="bg-gray-100 border-gray-200 border rounded p-2 focus:outline-none"
-                name="user_email"
-                id="user_email"
-              />
-            </label>
-            <label htmlFor="user_password" className="w-full flex flex-col">
-              Enter yout password
-              <input
-                type="password"
-                className="bg-gray-100 border-gray-200 border rounded p-2 focus:outline-none"
-                name="user_password"
-                id="user_password"
-              />
-            </label>
-            <button
-              className="uppercase w-full mt-4 flex justify-center items-center rounded bg-gray-900 text-white p-2"
-              onClick={logAdmin}
-            >
+            <InputText
+              placeholder="Email"
+              containerClasses="border border-primary-light mb-4 mx-auto"
+              id="user_email"
+              type="email"
+              required
+              onChange={(e) => setUserEmail(e.target.value)}
+            />
+            <InputText
+              placeholder="Enter yout password"
+              containerClasses="border border-primary-light mx-auto"
+              id="user_password"
+              type="password"
+              required
+              onChange={(e) => setUserPassword(e.target.value)}
+            />
+            <button className="max-w-sm uppercase w-full mt-4 flex justify-center items-center rounded bg-primary text-white p-2 focus:outline-none mx-auto">
               Sign In
             </button>
           </form>
@@ -51,7 +54,7 @@ const AdminLogin = (props) => {
             <a href="/">Forgot password?</a>
           </p>
         </div>
-        <div className="w-3/6 bg-gray-700 p-4 hidden sm:block">
+        <div className="w-3/6 bg-primary-light p-4 hidden sm:block">
           <img src={image} alt="" />
         </div>
       </div>

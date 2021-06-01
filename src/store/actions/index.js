@@ -1,3 +1,4 @@
+/* AUTH */
 export const LOGIN = 'LOGIN';
 export const LOGOUT = 'LOGOUT';
 export const IS_ADMIN = 'IS_ADMIN';
@@ -10,29 +11,11 @@ export const HIDE_SIDEBAR = 'HIDE_SIDEBAR';
 export const SHOW_OVERLAY = 'SHOW_OVERLAY';
 export const HIDE_OVERLAY = 'HIDE_OVERLAY';
 
-export function login () {
-    const action = {
-        type: LOGIN
-    };
-
-    return action;
-}
-
-export function logout () {
-    const action = {
-        type: LOGOUT
-    };
-
-    return action;
-}
-
-export function is_admin () {
-    const action = {
-        type: IS_ADMIN
-    };
-
-    return action;
-}
+/* LOADER */
+export const SHOW_LOADER = 'SHOW_LOADER';
+export const HIDE_LOADER = 'HIDE_LOADER';
 
 export * from './menu';
 export * from './overlay';
+export * from './auth';
+export * from './loader';

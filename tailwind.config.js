@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'white-tone': '#F7F7F7',
         'base-text': '#626264',
         'text-dark': '#182135',
         'text-light': '#878787',
@@ -16,7 +17,6 @@ module.exports = {
         'secondary': '#FF1E1E',
         'secondary-light': '#EB6363',
         'secondary-dark': '#9E1313',
-        'white-tone': '#F7F7F7',
         'main-bg': '#F2F2F2',
         'sidebar-bg': '#F8F8F8',
         'icon-color': '#000000'

@@ -49,3 +49,8 @@
         max-height: 3rem;
     }
 }
+
+.loader {
+    @apply border-white-tone;
+    border-top-color: #503E9D;
+}
